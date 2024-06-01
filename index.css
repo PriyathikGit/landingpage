@@ -476,5 +476,8 @@ footer button{
 
     footer{
         flex-direction: column;
+        padding: 0;
+        width: auto;
+        gap: 16px;
     }
 }
