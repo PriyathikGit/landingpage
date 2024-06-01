@@ -469,4 +469,8 @@ footer button{
     .ques{
         width: auto;
     }
+
+    .top-logo{
+        display: none;
+    }
 }
