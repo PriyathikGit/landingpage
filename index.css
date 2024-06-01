@@ -1,0 +1,472 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/fonts/ClashDisplayRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'MyCustomFont',sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+gap: 8rem;
+}
+
+.left-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding-left: 30px;
+}
+
+.logo-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+}
+sup{
+    position: relative;
+    right: 9px;
+    font-weight: normal;
+    bottom: 5px;
+    font-size: 12px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    padding: 0 22px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.btn button{
+    padding: 16px 40px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 40px;
+    transition: 0.5s ease;
+}
+
+.btn button:hover{
+    background-color: rgb(63, 59, 59);
+}
+
+.top-logo{
+    position: absolute;
+    right: 46px;
+    top: 42px;
+}
+
+.first-cnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.left-div1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: bold;
+}
+
+.left-div2{
+    position: relative;
+    bottom: 90px;
+}
+
+.col1 {
+    position: relative;
+    width: 520px;
+    
+}
+
+.col1 h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+}
+
+.col1 .blur-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    filter: blur(36px);
+    box-shadow: 10px 20px yellow;
+    z-index: 0;
+}
+.col2{
+    width: 500px; 
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+.button, .video-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: rgb(39, 38, 38);
+}
+.video-link {
+    display: flex;
+    align-items: center;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.video-link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+.video-link svg {
+    margin-right: 5px;
+}
+
+.second-cnt{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    
+}
+.logo-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.second-cnt svg{
+    width: 30px;
+}
+
+.second-cnt .row-box{
+    width: 536px;
+    margin: 25px 0;
+    
+   
+}
+.row-box span{
+    font-weight: bold;
+}
+
+.row-box p{
+    color: gray;
+}
+
+.second-cnt .blur-bg{
+    position: absolute;
+    left: 92%;
+    width: 112px;
+    height: 150px;
+    background-color: red;
+    border-radius: 50%;
+    filter: blur(50px);
+    box-shadow: 10px 20px yellow;
+}
+.logo-star{
+    position: absolute;
+    right: 0;
+    margin: 43px;
+}
+.third-cnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    font-weight: bold;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.third-cnt .logo{
+    width: 30px;
+    height: 30px;
+    background-color: #FF5555;
+    border-radius: 50%;
+    
+}
+.third-cnt .row-box{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 8px;
+    
+}
+
+
+.third-cnt  p{
+    color: grey;
+    width: 446px;
+}
+.logo2{
+    position: relative;
+    left: 1246px;
+    width: 40px;
+}
+.text-cnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.text-cnt p{
+    margin-top: 4px;
+    width: 340px;
+    text-align: center;
+    
+}
+
+.ques{
+    width: 879px; font-size: 2rem; font-weight: bold;
+}
+
+.left-div4{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-div4 p{
+    margin: 10px 0;
+    width: 532px;
+    font-weight: normal;
+}
+.left-div4 img{
+    width: 180px;
+    margin: 10px 0;
+}
+.forth-cnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    width: 55rem;
+    height: 140px;
+    margin: 20px 50px;
+    gap: 43px;
+}
+
+.color-box{
+    background-color: #FF5555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 14px;
+}
+
+.color-box span{
+    width: 251px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px;
+}
+.box span{
+    width: 251px;
+    text-align: start;
+}
+
+.img-cnt {
+    position: relative;
+    display: flex;
+}
+
+.img-cnt .blur-bg {
+    position: absolute;
+    top: -39px;
+    left: 283px;
+    width: 192px;
+    height: 149px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    box-shadow: 10px 20px yellow;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+
+.img-cnt img {
+    position: relative; /* Position the image relative to its container */
+    z-index: 1; /* Ensure image is above blur div */
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-height: 100%; /* Ensure image doesn't exceed container height */
+    display: block; /* Remove any default inline spacing */
+    margin: auto; /* Center the image horizontally */
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    flex-wrap: wrap;    
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 90px;
+    
+}
+
+.mx-2{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.rowBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.rowBox svg{
+    width: 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+footer input{
+    border: none;
+    padding: 14px 26px;
+}
+
+footer button{
+    border-bottom: none;
+    background-color: black;
+    padding: 14px 26px;
+    color: white;
+}
+.border{
+    border-bottom: 1px solid gray;
+    height: 2px;
+    margin: 0 auto;
+    width: 50vw;
+    margin-bottom: 60px;
+}
+
+.last-text{
+    text-align: center;
+    font-size: 1rem;
+}
+@media screen and (max-width:600px) {
+    body{
+
+    }
+    header{
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        gap: 0;
+    }
+    li{
+        display: none;
+    }
+    .first-cnt{
+        padding-top: 20px;
+        height: auto;
+        width: auto;
+        flex-direction: column-reverse;
+    }
+    .left-div1{
+        width: auto;
+        align-items: center;
+    }
+    .left-div2{
+       padding-top: 64px;
+    }
+
+    .col1{
+        width: auto;
+    }
+
+    .col2{
+        font-size: 0.8rem;
+        width: auto;
+    }
+    .forth-cnt{
+        height: auto;
+        width: auto;
+    }
+    .row{
+        width: auto;
+        height: auto;
+    }
+    .blur-bg{
+        display: none;
+    }
+    .third-cnt p{
+        width: 100vw;
+    }
+    .row-box p{
+        width: 100vw;
+    }
+
+    .left-div4 p{
+        width: 100vw;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .ques{
+        width: auto;
+    }
+}
