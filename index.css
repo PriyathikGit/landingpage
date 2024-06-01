@@ -447,8 +447,8 @@ footer button{
     font-family: sans-serif;
 }
 @media screen and (max-width:600px) {
-    body{
-
+    main{
+        overflow: hidden;
     }
     header{
         justify-content: center;
@@ -504,6 +504,7 @@ footer button{
     }
     .left-div4 h1{
         width: auto;
+        text-align: center
     }
     .row{
         flex-wrap: wrap;
@@ -518,6 +519,13 @@ footer button{
     .faq-sec{
         width: auto;
         margin: 0;
+        text-align: center;
+    }
+    .left-div4 img{
+        margin: 0 auto;
+    }
+    .left-div4 span{
+        text-align: center;
     }
     .img-cnt img{
         width: 100vw;
