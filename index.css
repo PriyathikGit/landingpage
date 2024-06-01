@@ -1,6 +1,20 @@
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('/fonts/ClashDisplayRegular.otf') format('opentype');
+    src: url('/fonts/ClashDisplaySemibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyCustomFontLight';
+    src: url('/fonts/ClashDisplayLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MyCustomFontBold';
+    src: url('/fonts/ClashDisplayBold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -11,12 +25,13 @@
     box-sizing: border-box;
     font-family: 'MyCustomFont',sans-serif;
     scroll-behavior: smooth;
+    font-weight: normal;
 }
 
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100vw;
 gap: 8rem;
 }
@@ -24,9 +39,8 @@ gap: 8rem;
 .left-sec{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 50px;
-    padding-left: 30px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .logo-sec{
@@ -78,7 +92,11 @@ li{
     right: 46px;
     top: 42px;
 }
-
+.lighttxt{
+    font-family: 'MyCustomFontLight';
+    font-weight: 500;
+    font-size: 16px;
+}
 .first-cnt{
     display: flex;
     justify-content: center;
@@ -91,7 +109,6 @@ li{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    font-weight: bold;
 }
 
 .left-div2{
@@ -109,6 +126,11 @@ li{
     position: relative;
     z-index: 1;
     font-size: 3rem;
+}
+
+.boldtxt{
+    font-family: 'MyCustomFontBold';
+    font-weight: 800;
 }
 
 .col1 .blur-bg {
@@ -266,7 +288,7 @@ li{
 }
 
 .ques{
-    width: 879px; font-size: 2rem; font-weight: bold;
+    width: 427px; font-size: 2rem; font-weight: bold;
 }
 
 .left-div4{
@@ -276,8 +298,10 @@ li{
 
 .left-div4 p{
     margin: 10px 0;
-    width: 532px;
-    font-weight: normal;
+    width: 427px;
+}
+.left-div4 h1{
+    width: 542px;
 }
 .left-div4 img{
     width: 180px;
@@ -291,7 +315,7 @@ li{
 }
 .row{
     display: flex;
-    width: 55rem;
+    width: 60em;
     height: 140px;
     margin: 20px 50px;
     gap: 43px;
@@ -319,6 +343,14 @@ li{
 .box span{
     width: 251px;
     text-align: start;
+    margin-bottom: 10px;
+}
+
+.box p{
+    font-weight: lighter;
+    font-family: 'MyCustomFontLight',sans-serif;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .img-cnt {
@@ -329,24 +361,24 @@ li{
 .img-cnt .blur-bg {
     position: absolute;
     top: -39px;
-    left: 283px;
+    left: 264px;
     width: 192px;
     height: 149px;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 50%;
-    box-shadow: 10px 20px yellow;
-    filter: blur(10px);
+    box-shadow: 23px 27px 67px yellow;
+    filter: blur(23px);
     z-index: 0;
 }
 
 
+
 .img-cnt img {
-    position: relative; /* Position the image relative to its container */
-    z-index: 1; /* Ensure image is above blur div */
-    max-width: 100%; /* Ensure image doesn't exceed container width */
-    max-height: 100%; /* Ensure image doesn't exceed container height */
-    display: block; /* Remove any default inline spacing */
-    margin: auto; /* Center the image horizontally */
+    position: relative; 
+    z-index: 1;
+    width: 60rem;
+    display: block; 
+    margin: auto; 
 }
 
 footer{
@@ -363,7 +395,6 @@ footer{
 
 .mx-2{
     display: flex;
-    justify-content: center;
     align-items: start;
     flex-direction: column;
 }
@@ -382,7 +413,8 @@ footer{
 .content{
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0 16px;
+    gap: 8px;
 }
 footer input{
     border: none;
@@ -406,6 +438,11 @@ footer button{
 .last-text{
     text-align: center;
     font-size: 1rem;
+}
+
+.footer-bold{
+    margin-bottom: 15px;
+    font-family: sans-serif;
 }
 @media screen and (max-width:600px) {
     body{
