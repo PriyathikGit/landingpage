@@ -473,4 +473,8 @@ footer button{
     .top-logo{
         display: none;
     }
+
+    footer{
+        flex-direction: column;
+    }
 }
