@@ -439,7 +439,9 @@ footer button{
     text-align: center;
     font-size: 1rem;
 }
-
+.faq-sec{
+   margin-right: 33rem;
+}
 .footer-bold{
     margin-bottom: 15px;
     font-family: sans-serif;
@@ -500,6 +502,9 @@ footer button{
     .left-div4 p{
         width: 100vw;
     }
+    .left-div4 h1{
+        width: auto;
+    }
     .row{
         flex-wrap: wrap;
     }
@@ -510,7 +515,13 @@ footer button{
     .top-logo{
         display: none;
     }
-
+    .faq-sec{
+        width: auto;
+        margin: 0;
+    }
+    .img-cnt img{
+        width: 100vw;
+    }
     footer{
         flex-direction: column;
         padding: 0;
